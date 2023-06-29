@@ -1,7 +1,7 @@
 @import 'base/variables';
 
 * {
-   font-family: 'Museo Sans Cyrl', sans-serif;
+   font-family: 'Roboto', sans-serif;
    padding: 0;
    margin: 0;
 
@@ -20,3 +20,4 @@
 @import 'blocks/consultation';
 @import 'blocks/forms';
 @import 'blocks/carousel';
+@import 'blocks/catalog';
