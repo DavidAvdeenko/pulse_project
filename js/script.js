@@ -64,4 +64,33 @@ $(document).ready(function () {
       })
    });
 
+   function validateForm(form) {
+      $(form).validate({
+         rules: {
+            name: {
+               required: true,
+               minlength: 2,
+            },
+            phone: "required",
+            email: {
+               required: true,
+               email: true,
+            }
+         },
+         messages: {
+            name: {
+               required: 'Пожалуйста, введите своё имя',
+               minlength: jQuery.validator.format('Введите как минимум {0} символа')
+            },
+            phone: 'Пожалуйста, введите свой номер телефона',
+            email: {
+               required: 'Пожалуйста, введите свою почту',
+               email: 'Неправильно введён арес почты'
+            }
+         }
+      });
+   };
+   validateForm('#consultation-form');
+   validateForm('#consultation form');
+   validateForm('#order form');
 });
