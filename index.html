@@ -7,6 +7,7 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Pulse</title>
    <link rel="stylesheet" href="./css/stylesheet.css">
+   <link rel="stylesheet" href="./css/animate.css">
    <link rel="stylesheet" href="./css/style.min.css">
    <link rel="stylesheet" href="./css/slick.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +17,7 @@
 </head>
 
 <body>
-   <section class="promo">
+   <section class="promo" id="up">
       <div class="container">
          <header class="header">
             <a href="#" class="header__logo">
@@ -79,7 +80,7 @@
                </div>
             </div>
             <div class="advantages__item">
-               <img src="./icons/heart.png" alt="heart" class="advantages__icon">
+               <img src="./icons/heart.png" alt="heart" class="advantages__icon advantages__icon_animated">
                <div class="advantages__subtitle">
                   Заботимся о здоровье
                </div>
@@ -429,7 +430,7 @@
    <section class="feed">
       <div class="container">
          <h2 class="title">отзывы клиентов</h2>
-         <div class="feed__item">
+         <div class="feed__item fadeInUp wow" data-wow-duration="2s" data-wow-delay="0.5s">
             <img src="img/feed1.png" alt="Ирина Иванченко" class="feed__img">
             <div class="feed__text">
                <div class="feed__subtitle">Ирина Иванченко</div>
@@ -444,7 +445,7 @@
                </div>
             </div>
          </div>
-         <div class="feed__item">
+         <div class="feed__item fadeInUp wow" data-wow-duration="2s" data-wow-delay="0.5s">
             <img src="img/feed2.png" alt="Иван Сёмочкин" class="feed__img">
             <div class="feed__text">
                <div class="feed__subtitle">Иван Сёмочкин</div>
@@ -459,7 +460,7 @@
                </div>
             </div>
          </div>
-         <div class="feed__item">
+         <div class="feed__item fadeInUp wow" data-wow-duration="2s" data-wow-delay="0.5s">
             <img src="img/feed3.png" alt="Юлия Дашкина" class="feed__img">
             <div class="feed__text">
                <div class="feed__subtitle">Юлия Дашкина</div>
@@ -529,10 +530,15 @@
       </div>
    </div>
 
+   <a href="#up" class="pageup">
+      <img src="icons/circle-chevron-up-solid.svg" alt="">
+   </a>
+
    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
    <script src="js/slick.min.js"></script>
    <script src="js/jquery.validate.min.js"></script>
+   <script src="js/wow.min.js"></script>
    <script src="js/script.js"></script>
 </body>
 
