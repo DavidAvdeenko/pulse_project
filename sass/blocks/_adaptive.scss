@@ -168,10 +168,10 @@
       }
 
       &__official {
-         font-size: 16px;
+         font-size: 14px;
 
          span {
-            font-size: 18px;
+            font-size: 16px;
          }
       }
 
@@ -273,13 +273,11 @@
 @media (max-width: 575px) {
    .header {
       &__phone {
-         font-size: 14px;
-         margin-bottom: 5px;
-         text-align: center;
+         display: none;
       }
 
       img {
-         width: 200px;
+         width: 170px;
       }
 
       &__official {
@@ -287,9 +285,23 @@
       }
 
       button {
-         width: 120px;
-         font-size: 10px;
-         height: 25px;
+         width: 135px;
+         font-size: 12px;
+         height: 30px;
+      }
+   }
+
+   .promo {
+      padding-left: 20px;
+
+      &__icons {
+         width: 380px;
+         padding: 0 10px;
+      }
+
+      &__icon {
+         width: 95px;
+         height: 95px;
       }
    }
 
@@ -304,22 +316,23 @@
       }
 
       &__inner {
-         width: 380px;
+         width: 340px;
 
          img {
-            width: 380px;
+            width: 340px;
          }
       }
    }
 
    .catalog {
       &__tab {
-         width: 180px;
+         width: 170px;
          height: 40px;
 
          div {
-            font-size: 12px;
+            font-size: 11px;
             line-height: 41px;
+
          }
       }
    }
@@ -372,6 +385,15 @@
          height: 15px;
          padding-right: 10px;
 
+      }
+   }
+
+   .consultation {
+      padding: 85px 15px 40px 15px;
+
+      .feed-form {
+         width: 260px;
+         margin-bottom: 15px;
       }
    }
 }

@@ -13,3 +13,40 @@
       transform: scale(1);
    }
 }
+
+@keyframes shoe_rotate {
+   from {
+      transform: rotate(0deg);
+   }
+
+   50% {
+      transform: rotate(30deg);
+   }
+
+   to {
+      transform: rotate(0deg);
+   }
+}
+
+@keyframes cup_rotate {
+   from {
+      transform: rotate(0deg);
+   }
+
+   25% {
+      transform: rotate(20deg);
+   }
+
+   50% {
+      transform: rotate(0deg);
+   }
+
+   75% {
+      transform: rotate(-20deg);
+   }
+
+   to {
+      //100%
+      transform: rotate(0deg);
+   }
+}

@@ -36,12 +36,28 @@
    }
 
    &__icon {
-      &_animated {
+      &_animated_heart {
          animation: heartbeat 1.5s ease infinite;
          // animation-name: heartbeat;
          // animation-duration: 1.5s;
          // animation-timing-function: ease;
          // animation-iteration-count: infinite;
+
+         &:hover {
+            animation-play-state: paused;
+         }
+      }
+
+      &_animated_shoe {
+         animation: shoe_rotate 1.5s ease infinite;
+
+         &:hover {
+            animation-play-state: paused;
+         }
+      }
+
+      &_animated_cup {
+         animation: cup_rotate 1.5s ease infinite;
 
          &:hover {
             animation-play-state: paused;
