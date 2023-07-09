@@ -3,7 +3,7 @@
 
    &__inner {
       position: relative;
-      width: 750px;
+      max-width: 750px;
       margin: 0 auto;
    }
 
@@ -15,7 +15,7 @@
       transform: translateY(-50%);
       left: -66px;
       border: none;
-      background-color: #fff;
+
 
       img {
          width: 31px;
@@ -26,5 +26,33 @@
    .slick-next {
       right: -66px;
       left: auto;
+   }
+
+   .slick-dots {
+      display: none;
+      justify-content: center;
+      margin-right: 10px;
+      list-style: none;
+      font-size: 32px;
+
+   }
+
+   // .slick-dots li {
+   //    margin: 0 0.5rem;
+   //    background-color: #000;
+   //    border-radius: 50%;
+
+   // }
+
+   .slick-slider button {
+      margin: 0 0.5rem;
+      display: none;
+      width: 25px;
+      height: 25px;
+      font-size: 16px;
+      padding: 0;
+      border: none;
+      border-radius: 50%;
+      margin-bottom: 40px;
    }
 }

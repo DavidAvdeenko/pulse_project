@@ -4,6 +4,8 @@ $(document).ready(function () {
       // adaptiveHeight: true,
       prevArrow: '<button type="button" class="slick-prev"><img src="icons/leftArrow.png"></button>',
       nextArrow: '<button type="button" class="slick-next"><img src="icons/rightArrow.png"></button>',
+      centerMode: true,
+      variableWidth: true,
       responsive: [
          {
             breakpoint: 992,
@@ -15,15 +17,19 @@ $(document).ready(function () {
          {
             breakpoint: 600,
             settings: {
-               slidesToShow: 2,
-               slidesToScroll: 2
+               slidesToShow: 1,
+               slidesToScroll: 1,
+               dots: true,
+               arrows: false
             }
          },
          {
             breakpoint: 480,
             settings: {
                slidesToShow: 1,
-               slidesToScroll: 1
+               slidesToScroll: 1,
+               dots: true,
+               arrows: false
             }
          }
       ]
