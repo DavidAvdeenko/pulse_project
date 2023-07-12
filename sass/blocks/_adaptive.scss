@@ -292,7 +292,8 @@
    }
 
    .promo {
-      padding-left: 20px;
+
+
 
       &__icons {
          width: 380px;
@@ -306,6 +307,8 @@
    }
 
    .carousel {
+      padding-right: 25px;
+
       .slick-dots {
          display: flex;
       }
@@ -316,15 +319,17 @@
       }
 
       &__inner {
-         width: 340px;
+         width: 300px;
 
          img {
-            width: 340px;
+            width: 300px;
          }
       }
    }
 
    .catalog {
+      padding: 70px 20px 100px 20px;
+
       &__tab {
          width: 170px;
          height: 40px;
@@ -335,6 +340,47 @@
 
          }
       }
+
+      &-item {
+         width: 240px;
+
+         &__subtitle {
+            font-size: 18px;
+         }
+
+         &__descr {
+            font-size: 14px;
+         }
+
+         &__link {
+            font-size: 16px;
+         }
+
+         &__list {
+            font-size: 12px;
+         }
+
+         &__back {
+            font-size: 16px;
+         }
+
+         &__price {
+            font-size: 19px;
+         }
+
+         &__img {
+            width: 120px;
+            height: 180px;
+         }
+      }
+
+
+   }
+
+   .button_mini {
+      width: 120px;
+      height: 40px;
+      font-size: 16px;
    }
 
    .feed {
@@ -359,9 +405,9 @@
 
    .footer {
       &__info {
-         width: 280px;
-         height: 65px;
-         padding: 25px 40px 60px 40px;
+         width: 240px;
+         height: 85px;
+         padding: 25px 30px 60px 30px;
       }
 
       &__social {
