@@ -138,3 +138,43 @@ $(document).ready(function () {
 
    new WOW().init();
 });
+
+// fetch('https://randomuser.me/api/', {
+//    method: 'PUT',
+//    headers: {
+//       'Content-type': "application/json"
+//    },
+//    body: JSON.stringify({
+//       id: 1,
+//       name: 'Bod'
+//    })
+// })
+//    .then(result => {
+//       if (result.ok) {
+//          return result.json();
+//       } else {
+//          console.log('ERROR');
+//          throw Error;
+//       }
+//    })
+//    .then(data => document.getElementById('header__official').innerHTML = JSON.stringify(data))
+//    // .then(data => document.getElementById('header__official').innerHTML = data.phone);
+//    .catch(error => console.log(error))
+
+
+const name = document.querySelector('#header__randName');
+const surname = document.querySelector('#header__randSurname');
+
+
+
+const generateUser = async () => {
+   const url = 'https://randomuser.me/api/';
+   const request = await fetch(url);
+   const { results } = await request.json();
+   const data = results[0];
+
+   name.textContent = data.name.first;
+   surname.textContent = data.name.last;
+}
+document.addEventListener('DOMContentLoaded', generateUser)
+setInterval(generateUser, 2000);

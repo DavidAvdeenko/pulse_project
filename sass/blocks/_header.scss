@@ -11,12 +11,15 @@
 
    &__official {
       color: #fff;
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 500;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
 
       span {
-         display: block;
          font-size: 18px;
       }
    }
