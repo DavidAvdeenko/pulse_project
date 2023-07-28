@@ -1,0 +1,55 @@
+{
+   "name": "learn-wp",
+   "version": "1.2.2",
+   "description": "ссылка на youtube\r https://youtu.be/o8KMucDpSno",
+   "main": "index.js",
+   "scripts": {
+      "start": "webpack serve",
+      "build-dev": "webpack",
+      "build-prod": "webpack --node-env=production",
+      "clear": "rd /s /q dist",
+      "deploy": "scp -P2122 -r ./dist/*  david@rockpi.tun.avdeenko.com:~/www/portfolio"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "browserslist": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+   ],
+   "devDependencies": {
+      "@babel/core": "^7.21.4",
+      "@babel/preset-env": "^7.21.4",
+      "babel-loader": "^9.1.2",
+      "copy-webpack-plugin": "^11.0.0",
+      "css-loader": "^6.8.1",
+      "group-css-media-queries-loader": "^4.3.0",
+      "html-loader": "^4.2.0",
+      "html-webpack-plugin": "^5.5.3",
+      "image-webpack-loader": "^8.1.0",
+      "mini-css-extract-plugin": "^2.7.5",
+      "node-sass": "^9.0.0",
+      "postcss": "^8.4.23",
+      "postcss-loader": "^7.3.3",
+      "postcss-preset-env": "^8.5.1",
+      "resolve-url-loader": "^5.0.0",
+      "sass": "^1.62.1",
+      "sass-loader": "^13.3.2",
+      "style-loader": "^3.3.3",
+      "webpack": "^5.88.2",
+      "webpack-cli": "^5.1.4",
+      "webpack-dev-server": "^4.13.3"
+   },
+   "dependencies": {
+      "normalize.css": "^8.0.1"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/maksim-leskin/learn-wp.git"
+   },
+   "bugs": {
+      "url": "https://github.com/maksim-leskin/learn-wp/issues"
+   },
+   "homepage": "https://github.com/maksim-leskin/learn-wp#readme"
+}
