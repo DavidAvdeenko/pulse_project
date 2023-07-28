@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // const CopyPlugin = require('copy-webpack-plugin');
@@ -24,19 +25,19 @@ module.exports = {
       filename: '[name].[contenthash].js',
       // assetModuleFilename: 'assets/[name][ext]',
    },
-   // entry: path.resolve(__dirname, 'src', 'slick.js'),
+   // entry: path.resolve(__dirname, 'src', 'slick.min.js'),
    // output: {
    //    path: path.resolve(__dirname, 'dist'),
    //    clean: true,
    //    filename: '[name].[contenthash].js',
-   //    assetModuleFilename: 'assets/[name][ext]',
+   //    // assetModuleFilename: 'assets/[name][ext]',
    // },
-   // entry: path.resolve(__dirname, 'src', 'valid.js'),
+   // entry: path.resolve(__dirname, 'src', 'validate.min.js'),
    // output: {
    //    path: path.resolve(__dirname, 'dist'),
    //    clean: true,
    //    filename: '[name].[contenthash].js',
-   //    assetModuleFilename: 'assets/[name][ext]',
+   //    // assetModuleFilename: 'assets/[name][ext]',
    // },
    plugins: [
       new HtmlWebpackPlugin({
@@ -45,6 +46,11 @@ module.exports = {
       new MiniCssExtractPlugin({
          filename: '[name].[contenthash].css',
       }),
+      new webpack.ProvidePlugin({
+         $: 'jquery',
+         jQuery: 'jquery',
+         'window.jQuery': 'jquery'
+      })
       // new CopyPlugin({
       //   patterns: [{ from: 'static', to: './' }],
       // }),

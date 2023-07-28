@@ -1,7 +1,9 @@
+import "jquery";
+import 'popper.js';
 import './index.html';
 import './index.scss';
-// import './slick.js';
-// import './valid.js';
+import './slick.js';
+import './valid.js';
 import './img/bg.jpg';
 import './img/bg2.jpg';
 import './img/circle-chevron-up-solid.svg';
@@ -24,20 +26,23 @@ import './img/slide_1.png';
 import './img/slide_2.jpg';
 import './img/slide_3.jpg';
 import './img/timer.png';
+require('jquery');
+require('slick-carousel');
 
-
-$(document).ready(function () {
+jQuery(function () {
    $('.carousel__inner').slick({
       speed: 1200,
       // adaptiveHeight: true,
-      prevArrow: '<button type="button" class="slick-prev"><img src="icons/leftArrow.png"></button>',
-      nextArrow: '<button type="button" class="slick-next"><img src="icons/rightArrow.png"></button>',
+      // prevArrow: '<button type="button" class="slick-prev"><img src="./leftArrow.png"></button>',
+      // nextArrow: '<button type="button" class="slick-next"><img src="./rightArrow.png"></button>',
       centerMode: true,
       variableWidth: true,
       responsive: [
          {
             breakpoint: 992,
             settings: {
+               slidesToShow: 1,
+               slidesToScroll: 1,
                dots: true,
                arrows: false,
             }

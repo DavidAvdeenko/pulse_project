@@ -8,7 +8,7 @@
       "build-dev": "webpack",
       "build-prod": "webpack --node-env=production",
       "clear": "rd /s /q dist",
-      "deploy": "scp -P2122 -r ./dist/*  david@rockpi.tun.avdeenko.com:~/www/portfolio"
+      "deploy": "scp -P2122 -r ./dist/*  david@rockpi.tun.avdeenko.com:~/www/pulse_project"
    },
    "keywords": [],
    "author": "",
@@ -42,7 +42,10 @@
       "webpack-dev-server": "^4.13.3"
    },
    "dependencies": {
-      "normalize.css": "^8.0.1"
+      "jquery": "^3.7.0",
+      "normalize.css": "^8.0.1",
+      "popper.js": "^1.16.1",
+      "slick-carousel": "^1.8.1"
    },
    "repository": {
       "type": "git",
